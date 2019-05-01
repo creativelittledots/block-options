@@ -75,7 +75,7 @@ class EditorsKit_ACF_Support {
 
 		add_action( 'rest_api_init', function () {
 			if ( ! is_user_logged_in() ) {
-				wp_die( esc_html__( 'Sorry you are not allowed to access this data.', '@@textdomain' ), 'cheatin eh?', 403 );
+				//wp_die( esc_html__( 'Sorry you are not allowed to access this data.', '@@textdomain' ), 'cheatin eh?', 403 );
 			}
 
 			if( class_exists( 'ACF' ) ){
